@@ -14,14 +14,16 @@
   },
   "content_scripts": [ {
     "js": [ "content.js" ],
-    "matches": [ "https://localhost:3000/*", "https://localhost:8000/*", "http://localhost:8000/*","https://localhost/*" ]
+    "matches": [ "https://localhost:3000/*", "https://localhost:8000/*", "http://localhost:8000/*","https://localhost/*", "http://edulink.siplo.xyz/*", "https://edulink.siplo.xyz/*" ]
   }],
   "externally_connectable": {
       "matches": [
           "https://localhost:3000/*",
           "https://localhost:8000/*",
           "http://localhost:8000/*",
-          "https://localhost/*"
+          "https://localhost/*",
+          "https://edulink.siplo.xyz/*",
+          "http://edulink.siplo.xyz/*"
       ]
   }
 }
